@@ -5,20 +5,20 @@
 class Aigotchi < Formula
   desc "Terminal Tamagotchi that grows with your Claude Code token usage"
   homepage "https://github.com/egoomoy/aigotchi"
-  version "0.1.0"
+  version "0.2.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/egoomoy/aigotchi/releases/download/v0.1.0/aigotchi_darwin_amd64.tar.gz"
-      sha256 "bd1d7321626cfb2f8183e29cfbf1463adf631feea7db34f10e8113f2c1b632af"
+      url "https://github.com/egoomoy/aigotchi/releases/download/v0.2.0/aigotchi_darwin_amd64.tar.gz"
+      sha256 "bc2aba246b088fa5ad85fa5af2f9307288acba50746e81bff9492fa42c1e35c0"
 
       define_method(:install) do
         bin.install "aigotchi"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/egoomoy/aigotchi/releases/download/v0.1.0/aigotchi_darwin_arm64.tar.gz"
-      sha256 "9d96fb44a4a534c25020c056dfb63505d98153f32df7f926fce7bd23750f7ab1"
+      url "https://github.com/egoomoy/aigotchi/releases/download/v0.2.0/aigotchi_darwin_arm64.tar.gz"
+      sha256 "713729b0126c3a5b100e6885afe585ba30d79a441a1a77ffa83f901b03f79ebb"
 
       define_method(:install) do
         bin.install "aigotchi"
@@ -28,15 +28,15 @@ class Aigotchi < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/egoomoy/aigotchi/releases/download/v0.1.0/aigotchi_linux_amd64.tar.gz"
-      sha256 "3598c14a6916c80006e67c264a1cd167aa4409a8b41a3a9f96d37ee244b6e212"
+      url "https://github.com/egoomoy/aigotchi/releases/download/v0.2.0/aigotchi_linux_amd64.tar.gz"
+      sha256 "a4f279a1956b3f00ee2446ed4fe20629694fda34dfb2e4c07a271a32beb8de93"
       define_method(:install) do
         bin.install "aigotchi"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/egoomoy/aigotchi/releases/download/v0.1.0/aigotchi_linux_arm64.tar.gz"
-      sha256 "e16d3afb315dbb076f7f817873ed0e66f84dc6dd29cf3ea259f07af8ff201b9b"
+      url "https://github.com/egoomoy/aigotchi/releases/download/v0.2.0/aigotchi_linux_arm64.tar.gz"
+      sha256 "815ee48f45cc567682c5fa3c047c4838f45193f0b7dca4418a30fe7131559efe"
       define_method(:install) do
         bin.install "aigotchi"
       end
